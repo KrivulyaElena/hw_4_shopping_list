@@ -1,0 +1,87 @@
+*{
+	box-sizing: border-box;
+}
+
+h1{
+	margin:0 0 5px 0; 
+	padding: 0;	
+}
+
+p{
+margin:0; 
+padding: 0 0 5px 0;
+}
+
+header {
+color:#d05d48;
+background-color: #343131;
+text-align: center;
+font-weight: bolder;
+}
+
+main {
+	background-color: black;
+	min-height: 450px;
+}
+
+form{
+	text-align: center;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0px;
+	margin-left: 10x;
+	background-color: grey;
+	color: white;
+	display: inline-block;
+	text-align: left;
+	font-size: 25px;
+	width: 50%;
+}
+
+li{
+	padding: 15px;
+}
+
+li:nth-of-type(even){
+	background-color:#474E50;
+}
+
+li:hover {
+	background-color: #85849A;
+	border-bottom: solid white 3px;
+	border-top: solid white 3px;
+}
+
+.check:checked + span{
+	text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ span {
+	font-size: 20px;
+	color:#b0a9b8;
+}
+
+li:active{
+	background-color:#E58B82;
+	transition: all .1s ease-in;
+}
+
+footer{
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 100px;
+}
+
+footer p {
+display: inline-block;
+color:#d05d48;
+background-color: #343131;
+text-align: center;
+width: 50%;
+font-size: 25px;
+margin: 10px;
+padding: 10px;
+}
