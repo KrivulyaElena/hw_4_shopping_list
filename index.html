@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
 	<meta charset="utf-8">
 	<title>CSS-dinner</title>
@@ -7,47 +8,62 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
 	<header class="header">
 		<h1>CSS Diner Shopping List</h1>
 		<p>Let's go to the mall</p>
 	</header>
 	<main class="main">
-		<form>
-			<ul>					
+		<form class="shopping-list">
+			<ul id="shopList">
 				<li>
 					<input type="checkbox" class="check">
 					<span class="item">A lot of pickles</span>
 					<span class="small_text">(for the next lessons about CSS)</span>
 				</li>
 				<li>
-					<input type="checkbox"class="check">
+					<input type="checkbox" class="check">
 					<span class="item">10 apples</span>
 					<span class="small_text">(for more CSS manipulation)</span>
 				</li>
 				<li>
-					<input type="checkbox"class="check">
+					<input type="checkbox" class="check">
 					<span class="item">20 oranges</span>
 					<span class="small_text">(because they are awesome)</span>
 				</li>
 				<li>
-					<input type="checkbox"class="check">
+					<input type="checkbox" class="check">
 					<span class="item">13 plates</span>
 					<span class="small_text">(hm..they always disappear)</span>
 				</li>
 				<li>
-					<input type="checkbox"class="check">
+					<input type="checkbox" class="check">
 					<span class="item">15 bentos</span></li>
 				<li>
-					<input type="checkbox"class="check">
+					<input type="checkbox" class="check">
 					<span class="item">1 bottle of Sake^_^</span>
 					<span class="small_text">(for my friends)</span>
 				</li>
 			</ul>
-		</form>	
+		</form>
+		<form id="form">
+				<input type="text" id="newItem">
+				<button id="add">add</button>
+			</form>
+			<span id="coordinate" style="color: #fff; position: fixed; top: 0; left: 0;"></span>
+			<section class="drag-wrapper visually-hidden">
+				<div id="drag" class="drag"><div id="drag-item" class="drag-item"></div></div>				
+			</section>
 	</main>
+	
+
 	<footer class="footer">
-		<p>Bon appetit :)</p>
-	</footer>	
+			<p>Bon appetit :)</p>
+		</footer>
+
+
+	<script src="app.js"></script>
 </body>
+
 </html>
